@@ -1,6 +1,6 @@
 import pygame
 pygame.init()
-temp = input("Введите два значения: ")
+temp = input("Введите размеры окна: ")
 if len(temp.split()) == 2 and all(map(lambda s: s.isdigit(), temp.split())):
     width, height = map(int, temp.split())
     pygame.display.set_caption(f"{width}x{height}")
